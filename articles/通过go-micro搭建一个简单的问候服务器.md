@@ -8,7 +8,7 @@
 go get github.com/micro/protoc-gen-micro
 ```
 
-#### 关于Proto
+### 关于Proto
 
 由于每个微服务对应一个独立运行的代码库，一个很自然的问题就是如何在这些微服务之间通信。
 
@@ -55,7 +55,7 @@ build:
 现在，如果你运行$ make build，然后前往文件夹proto，greeter.pb.go。这个文件是protoc自动生成的，它将proto文件中的service转化成了需要我们在Golang代码中需要编写的interface。
 
 
-#### 创建服务
+### 创建服务
 
 创建文件: helloworld/main.go
 
@@ -98,7 +98,7 @@ func main() {
 }
 ```
 
-#### 创建测试客户端
+### 创建测试客户端
 
 创建文件: helloworld/cli/client.go
 
@@ -135,10 +135,13 @@ func main() {
 }
 ```
 
-#### 运行
+### 运行
 
 由于是本地开发，所以先使用Multicast DNS 的方式做服务发现
-后期线上项目可使用 Consul： https://www.consul.io/ 或者 ectd来做服务发现
+
+后期线上项目可使用 Consul： https://www.consul.io/ 
+
+或者 ectd来做服务发现
 
 通过 `--registry=mdns` 或者 环境变量注入 `MICRO_REGISTRY=mdns` 进行设置
 
@@ -183,7 +186,9 @@ go run cli/client.go --registry=mdns
 hello 111
 ```
 
-至次，我们通过微服务创建了一个客户端和服务段
+至次，我们通过微服务创建了一个客户端和服务端
+
+
 
 
 
