@@ -6,7 +6,7 @@
 go-micro 仓库地址: https://github.com/micro/go-micro
 
 1. [通过go-micro搭建一个简单的问候服务器](./articles/通过go-micro搭建一个简单的问候服务器.md)
-2. [微服务容器化运行并配置docker-compose](./articles/通过go-micro搭建一个简单的问候服务器.md)
+2. [微服务容器化运行并配置docker-compose](./articles/微服务容器化运行并配置docker-compose.md)
 
     
 
