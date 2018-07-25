@@ -52,7 +52,7 @@ build:
 	protoc -I. --micro_out=. --go_out=. ./proto/greeter.proto
 ```
 
-现在，如果你运行$ make build，然后前往文件夹proto，greeter.pb.go。这个文件是protoc自动生成的，它将proto文件中的service转化成了需要我们在Golang代码中需要编写的interface。
+现在，如果你运行$ make build，然后前往文件夹proto，greeter.pb.go和greeter.micro.go。这个文件是protoc自动生成的，它将proto文件中的service转化成了需要我们在Golang代码中需要编写的interface。
 
 
 ### 创建服务
