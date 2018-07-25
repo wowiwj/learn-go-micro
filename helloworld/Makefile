@@ -4,7 +4,6 @@ build:
 	docker build -t greeter-service .
 
 
-run-server:
+run:
 	docker run -e MICRO_REGISTRY=mdns greeter-service
-run-cli:
-	docker run -e MICRO_REGISTRY=mdns greeter-cli
+
