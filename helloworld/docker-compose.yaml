@@ -1,0 +1,16 @@
+version: "2"
+
+
+services:
+  greeter-server:
+    build: .
+    environment:
+      MICRO_REGISTRY: "mdns"
+
+  greeter-cli:
+      build: ./cli
+      environment:
+        MICRO_REGISTRY: "mdns"
+      depends_on:
+        - greeter-server
+
