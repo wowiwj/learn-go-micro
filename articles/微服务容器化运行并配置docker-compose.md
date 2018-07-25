@@ -138,6 +138,8 @@ helloworld_greeter-cli_1 exited with code 0
 
 说明微服务通信成功
 
+相关代码请查看: https://github.com/wowiwj/learn-go-micro/tree/v0.0.2
+
 
 
 
